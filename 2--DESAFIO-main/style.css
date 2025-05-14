@@ -507,7 +507,7 @@ body, html {
     color: #333333;
 }
 
-.footer {
+.footer-area {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -515,7 +515,7 @@ body, html {
 
 }
 
-.footer h2 {
+.footer-area h2 {
     font-family: 'Roboto Condesend', sans-serif;
     text-align: center;
     font-size: 3.75rem;
@@ -533,7 +533,7 @@ body, html {
     align-items: center;
 }
 
-.footer img {
+.footer-area img {
     width: 12.5rem;
     height: 12.5rem;
 }
