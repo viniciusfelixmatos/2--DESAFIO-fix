@@ -13,7 +13,7 @@ body, html {
 .header-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 6.25rem;
     height: 3.75rem;
@@ -122,7 +122,7 @@ body, html {
 /* Intro-content | seção abaixo do header*/
 
 .intro-area {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/image-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/image-bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -410,39 +410,22 @@ body, html {
     margin-top: 1.875rem;
 }
 
-.am-prev {
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2.5rem;
-    border: none;
-    background-color: #FA8550;
+.owl-nav button {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 2.5rem !important;
+    background-color: #FA8550 !important;
 }
 
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: none!important;
-}
-
-.am-prev img {
+.owl-prev img {
     height: 1.5rem;
     width: 1.5rem;
 }
 
-.am-next {
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2.5rem;
-    border: none;
-    background-color: #FA8550;
-
-}
-
-.am-next img {
+.owl-next img {
     height: 1.5rem;
     width: 1.5rem;
 }

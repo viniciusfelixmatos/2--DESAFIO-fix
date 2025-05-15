@@ -3,15 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector(".menu-links");
 
     const arrow = document.querySelector(".arrow-box");
+    const about = document.querySelector(".about-area");
 
     /*Função para botão de menu*/
     arrow.addEventListener("click", function() {
-        console.log("clicado");
-        window.scrollBy({
-            bottom: 100,
-            behavior: 'smooth'
-        });
-        console.log("movido");
+        about.scrollIntoView({behavior: "smooth"});
     });
 
     toggle.addEventListener("click", () => {
@@ -26,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         items: 1,                   
         margin: 20,
         stagePadding: 250,
-        navText:[$('.am-next'),$('.am-prev')], 
+        navText: ["<img src='./img/seta-esquerda.png'>","<img src='./img/seta-direita.png'>"],
         nav: true,
         dots: true,
         responsive: {
