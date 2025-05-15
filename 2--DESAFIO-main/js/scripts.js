@@ -2,14 +2,35 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".menu-links");
 
+    /* Selector de elementos */
+    const sobre = document.getElementById('sobre')
+    const pontos = document.getElementById('pontos-jogo')
+    const baixe = document.getElementById('baixe-jogo')
     const arrow = document.querySelector(".arrow-box");
-    const about = document.querySelector(".about-area");
 
-    /*Função para botão de menu*/
+    /* Selector Sections */
+    const about = document.querySelector(".about-area");
+    const info = document.querySelector(".info-game");
+    const download = document.querySelector(".download-area")
+
+    /* Click scroll */
+    sobre.addEventListener("click", function() {
+        about.scrollIntoView({behavior: "smooth"}); 
+    });
+
+    pontos.addEventListener("click", function() {
+        info.scrollIntoView({behavior: "smooth"});
+    });
+
+    baixe.addEventListener("click", function(){
+        download.scrollIntoView({behavior: "smooth"});
+    });
+
     arrow.addEventListener("click", function() {
         about.scrollIntoView({behavior: "smooth"});
     });
-
+    
+    /*Função para botão de menu*/
     toggle.addEventListener("click", () => {
         menu.classList.toggle("active");
         toggle.classList.toggle("active");
