@@ -145,15 +145,15 @@ body, html {
     transition:all 0.5s ease;
 }
 
-.arrow-box:hover {
-    transform: scale(1.15);
-}
-
 .arrow-box img {
     width: 42px;
     height: 42px;
     text-align: center;
     position: relative;
+}
+
+.arrow-box img:hover {
+    transform: scale(1.15);
 }
 
 .intro-text {
@@ -365,6 +365,7 @@ body, html {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1rem;
 }
 
 .owl-stage-outer {
